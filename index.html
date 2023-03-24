@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Video Converter</title>
+    <style>
+        pre {
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+        body, pre {
+            opacity: 1;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <pre></pre>
+</body>
+<script type="module">
+    import art from './data.js'
+    fetch('variables.json')
+        .then(raw => raw.json())
+        .then(variables => {
+            const pre = document.querySelector('pre');
+            pre.style = `
+                font-size: calc(100vw / ${variables.PIXEL_DENSITY / variables.ASPECT_RATIO})
+            `
+            art.forEach((element, index) => {
+                setTimeout(() => document.querySelector('pre').innerText = element, 24.7 * index)
+            })
+        })
+</script>
+</html>

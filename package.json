@@ -1,0 +1,28 @@
+{
+  "name": "mp4scii",
+  "version": "1.0.0",
+  "description": "Convert any mp4 video into ascii art",
+  "main": "data.js",
+  "scripts": {
+    "postinstall": "pip install -r requirements.txt",
+    "convert": "py convert.py",
+    "start": "ws 3000 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CastroM13/mp4scii.git"
+  },
+  "author": "CastroM13",
+  "keywords": [
+    "python",
+    "javascript"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CastroM13/mp4scii/issues"
+  },
+  "homepage": "https://github.com/CastroM13/mp4scii#readme",
+  "dependencies": {
+    "webserver": "^5.0.1"
+  }
+}

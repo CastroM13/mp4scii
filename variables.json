@@ -1,0 +1,7 @@
+{
+    "FRAME_RATE": 24.7,
+    "FRAME_QUANTITY": 140,
+    "PIXEL_DENSITY": 360,
+    "ASPECT_RATIO": 1,
+    "VIDEO_FILE": "examples/dwayne.mp4"
+}
